@@ -6,6 +6,7 @@ This directory contains operational guides — how to set up, configure, and run
 - `setup.md` — Project setup and environment configuration
 - `first-run.md` — First-time startup and verification
 - `configuration.md` — Environment variables and settings reference
+- `granola.md` — Granola API export and macOS hourly scheduling
 - `google-oauth.md` — Google OAuth setup for Gmail and Calendar
 - `slack-integration.md` — Slack workspace integration
 - `telegram-setup.md` — Telegram bots: primary + persona bots, commands, quoted-reply threading

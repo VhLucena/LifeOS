@@ -2,7 +2,7 @@
 
 > **Status:** Complete
 > **Owner:** Data Pipeline
-> **Last Updated:** 2026-11-03
+> **Last Updated:** 2026-11-07
 
 How LifeOS ingests and stores data from multiple sources.
 
@@ -37,7 +37,7 @@ How LifeOS ingests and stores data from multiple sources.
 | Vault Notes | Obsidian markdown | Name mentions, context paths |
 | LinkedIn | CSV Import | Connections, companies, titles |
 | LinkedIn Profiles | Browser Scraping | Full profile data (experience, education, skills) |
-| Meeting notes (Wispr, Granola) | Vault index job and nightly vault reindex (notes placed by the external `local-processing` watchers) | Meeting transcripts, attendees |
+| Meeting notes (Wispr, Granola) | Vault index job and nightly vault reindex (notes placed by `scripts/sync_granola.py` for Granola or external `local-processing` watchers) | Meeting transcripts, attendees |
 
 ### Example Data Volume
 
@@ -856,3 +856,5 @@ The scraping system uses Claude in Chrome MCP for browser automation. It require
 - [ADR-002: ChromaDB](../../adr/002-chromadb-vector-store.md) -- Why ChromaDB was chosen
 - [ADR-003: Two-Tier Data Model](../../adr/003-two-tier-data-model.md) -- Why SourceEntity and PersonEntity are separate
 - [ADR-012: Embedding Pipeline](../../adr/012-embedding-pipeline.md) -- Embedding model, GPU/CPU fallback, pre-flight RAM gate around phase 4
+
+- [Granola Sync](../../guides/granola.md) — API export and macOS scheduling
