@@ -32,7 +32,7 @@ The private incremental state and lock live in `data/granola-sync/`, ignored by
 Git. Use `--state-dir` to select a different state directory. Logs report counts
 and error classes without printing meeting content or API response bodies.
 
-## macOS hourly schedule
+## macOS five-minute schedule
 
 Render `config/launchd/com.lifeos.granola-sync.plist.template`, replacing
 `__HOME__` and `__LIFEOS_PATH__` with this machine's home and absolute checkout
@@ -44,7 +44,7 @@ mkdir -p data/granola-sync
 launchctl bootstrap "gui/$(id -u)" ~/Library/LaunchAgents/com.lifeos.granola-sync.plist
 ```
 
-The agent runs at login and every 3,600 seconds while the Mac is awake. It does
+The agent runs at login and every 300 seconds (five minutes) while the Mac is awake. It does
 not start the LifeOS API. To inspect or trigger the loaded agent:
 
 ```bash
